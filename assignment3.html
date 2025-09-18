@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>1. Promise Based Coding Questions.</h1>
+        <br /><br /><br /><br /><br />
+        <hr />
+        <hr />
+        <h1>2. Async / Await Based Coding Questions.</h1>
+        <script>
+      //Promise Based Coding Questions
+
+      // 1. Create a promise that resolves after 2 seconds
+
+      //   const prom = new Promise((resolve) => {
+      //     setTimeout(() => {
+      //       resolve("Task Completed");
+      //     }, 2000);
+      //   });
+      //   prom.then((msg) => {
+      //     console.log(msg);
+      //   });
+
+      //. Write a promise that resolves with "Eligible" if age ≥ 18, otherwise rejects with "Not
+      //Eligible".
+
+      //   const age = 16;
+
+      //   const chh = new Promise((resolve, reject) => {
+      //     if (age >= 18) {
+      //       resolve("Eligible");
+      //     } else {
+      //       reject("Not Eligible");
+      //     }
+      //   });
+
+      //   chh.then((msg) => {
+      //     console.log(msg);
+      //   });
+      //   chh.catch((err) => {
+      //     console.log(err);
+      //   });
+
+      // 3. Create a promise chain where the first .then() multiplies a number by 2, the second
+      // .then() adds 5, and the final result is printed.
+
+      //   const num = 10;
+
+      //   const Numcheck = new Promise((resolve) => {
+      //     resolve(num);
+      //   });
+
+      //   Numcheck.then((num) => num * 2)
+      //     .then((num) => num + 5)
+      //     .then((res) => console.log(res));
+
+      //4. Write a rejected promise and handle the error with .catch().
+
+      //   const prim = new Promise((resolve, reject) => {
+      //     reject("Bhai kuch to galat hai.");
+      //   });
+
+      //     prim.then((res) => console.log(res))
+      //    prim.catch((err) => console.log("Error:", err));
+
+      //5. Write a promise that takes a string and resolves with its uppercase version.
+
+      // const name = "amankumar";
+      // const upp = new Promise((resolve) => {
+      //   resolve(name.toUpperCase());
+      // });
+      // upp.then((res) => console.log(res));
+
+
+
+      //Async / Await Based Coding Questions 
+
+      
+
+      // 1. Write an async function that resolves with "Hello Async" using a promise and print it
+      // with await.
+
+      //   async function res() {
+      //     const myname = new Promise((resolve) => {
+      //       resolve("Hello Async");
+      //     });
+
+      //     const message = await myname;
+      //     console.log(message);
+      //   }
+
+      //   res();
+
+      // 2. Write an async function that returns a number from a promise, doubles it using await,
+      // and prints the result.
+      //   async function doubleNum() {
+      //     const number = new Promise((resolve) => {
+      //       resolve(10);
+      //     });
+
+      //     const num = await number;
+      //     const result = num * 2;
+      //     console.log(result);
+      //   }
+
+      //   doubleNum();
+
+      // 3. Write an async function where a promise rejects, and handle the error using a
+      // try...catch block.
+
+      //   async function Errorha() {
+      //     const myerror = new Promise((_, reject) => {
+      //       reject("Something went wrong.");
+      //     });
+
+      //     try {
+      //       const result = await myerror;
+      //       console.log(result);
+      //     } catch (error) {
+      //       console.log("Error:", error);
+      //     }
+      //   }
+
+      //   Errorha();
+
+      //  4. Write an async function that prints "Step 1" from one promise, then "Step 2" from
+      // another promise sequentially.
+
+      //   async function steps() {
+      //     const stp1 = new Promise((resolve) => {
+      //       resolve("Step 1 run ho gya bhai.");
+      //     });
+
+      //     const stp2 = new Promise((resolve) => {
+      //       resolve("Step 2 bhi run ho gya bhai.");
+      //     });
+
+      //     const step1 = await stp1;
+      //     console.log(step1);
+
+      //     const step2 = await stp2;
+      //     console.log(step2);
+      //   }
+
+      //   steps();
+
+      //  5. Write an async function where you use await on a normal value (like 10) and check the
+      // output.
+
+      async function test() {
+        const value = await 10;
+        console.log(value);
+      }
+
+      test();
+    </script>
+    </body>
+</html>
